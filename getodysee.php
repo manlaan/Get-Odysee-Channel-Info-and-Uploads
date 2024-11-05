@@ -87,6 +87,7 @@ function getodysee($link) {
           'tags'=>$item['value']['tags'],
           'media_type'=>$item['value']['source']['media_type'],
           'video_length'=>$item['value']['video']['duration'],
+          'cost'=>$item['value']['fee']['amount'],
         );
         switch ($item['value']['stream_type']) {
           default:
